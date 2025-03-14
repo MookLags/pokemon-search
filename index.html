@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pokemon Search</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <p id="introduction">Type a name or a Dex # and hit the green button to search!</p>
+      <div id="pokeball">
+        <div id="pokeball-button"></div>
+      </div>
+    </header>
+    <main>
+      <div id="pokedex-container">
+        <div id="dex-top-container">
+          <div id="dex-top">
+            <div id="top-screen">
+              <header>
+                <div id="name-div">
+                <h3 id="pokemon-name"></h3>
+                </div>
+                <div id="input-container">
+                  <button type="button" id="previous-btn"><=</button>
+                  <input type="text" id="search-input" required />
+                  <button type="button" id="next-btn">=></button>
+                </div>
+              </header>
+              <div id="sprite-container"></div>
+              <div id="types-id-height-weight">
+                <p id="pokemon-id" class="tihw"></p>
+                <p id="height" class="tihw"></p>
+                <p id="weight" class="tihw"></p>
+                <div id="types" class="tihw"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="dex-bottom-container">
+          <div id="dpad-handle">
+          <div id="dpad-container">
+            <div class="dpad-square"></div>
+            <div class="dpad-square button"></div>
+            <div class="dpad-square"></div>
+            <div class="dpad-square button"></div>
+            <div class="dpad-square button"></div>
+            <div class="dpad-square button"></div>
+            <div class="dpad-square"></div>
+            <div class="dpad-square button"></div>
+            <div class="dpad-square"></div>
+          </div>
+          </div>
+          <div id="dex-bottom">
+            <div id="bottom-screen">
+              <div id="stats-container">
+                <div id="hp-container" class="stat">
+                  <p>HP: </p>
+                  <p id="hp"><p>
+                  <div id="hp-display" class="display"></div>
+                </div>
+                <div id="attack-container" class="stat">
+                  <p>Attack: </p>
+                  <p id="attack"><p>
+                  <div id="attack-display" class="display"></div>
+                </div>
+                <div id="defense-container" class="stat">
+                  <p>Defense: </p>
+                  <p id="defense"></p>
+                  <div id="defense-display" class="display"></div>
+                </div>
+                <div id="sp-attack-container" class="stat">
+                  <p>Sp. Attack: </p>
+                  <p id="special-attack"></p>
+                  <div id="special-attack-display" class="display"></div>
+                </div>
+                <div id="sp-defense-container" class="stat">
+                  <p>Sp. Defense: </p>
+                  <p id="special-defense"></p>
+                  <div id="special-defense-display" class="display"></div>
+                </div>
+                <div id="speed-container" class="stat">
+                  <p>Speed: </p>
+                  <p id="speed"></p>
+                  <div id="speed-display" class="display"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="search-handle">
+            <button type="button" id="search-button"></button>
+            <audio id="pc-boot-audio">
+              <source src="./assets/pc-boot.m4a"></source>
+            </audio>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>

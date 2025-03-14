@@ -1,0 +1,31 @@
+Okay... I think I am going to have a lot of fun with this one.
+
+For the actual population of data, I'm obviously going to use what I learned from the previous two challenges: using fetch() to return
+resonses, turning those responses into json so I can use them.
+
+I have to options for the fetch request: 
+
+Option one is
+
+fetch(url)
+.then((res) => res.json())
+.then((data) => {
+  doSomething(data);
+});
+
+the second is
+
+const fetchData = async () => {
+  const res = await fetch(url);
+  const data = await res.json();
+  showPokeData(data);
+}
+
+Gotta get better with knowing the syntax off the top of my head, but my heart's in the right place.
+
+I'll probably do the second one. I think it looks a little nicer.
+
+To populate data, I'll have a table in the html and I'll add td's with the variables I get from the url.
+Gotta deconstruct.
+
+
